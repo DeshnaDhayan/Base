@@ -2,38 +2,43 @@ doctype html
 html(lang = "fr")
     head
         meta(charset='utf-8')
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+        link(rel="stylesheet" href="style.css")
         title 
             block title
 
     body 
         header
-            
             nav
                 ul
                     li
-                        a(href="") Accueil
-              
+                        a(href="accueil.pug") ACUEIL
                     li
-                        a(href="Qui-sommes-nous.pug") Qui sommes nous ?
-              
-
+                        a(href="Qui-sommes-nous.pug") QUI SOMMES NOUS ?
                     li
-                        a(href="") Nos services
+                        a(href="nos_services") NOS SERVICES
 
     main 
         block content 
 
     footer 
-        p Be Biker
-        p 143,avenue de Versailles
-        p 75016 Paris
-        p contact@bebiker.fr
-        p 01.23.45.67.89
+        p 
+            |Be Biker
+        p 
+            |143,avenue de Versailles
+        p 
+            |75016 Paris
+        p 
+            |contact@bebiker.fr
+        p 
+            |01.23.45.67.89
         nav
             ul
-             li
-               a(href='accueil.html') ACCUEIL
-             li
-               a(href='qui_sommes_nous.html') QUI SOMMES-NOUS ?
-             li
-                a(href='nos_services.html') SERVICES NOS
+                li
+                    a(href="accueil.pug") Accueil
+                li
+                    a(href="Qui-sommes-nous.pug") Qui sommes nous ?
+                li
+                    a(href="nos_services") Nos services
